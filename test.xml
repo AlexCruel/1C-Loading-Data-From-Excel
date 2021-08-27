@@ -1,0 +1,23 @@
+﻿<Состав xmlns="http://company.com/1C/Nomenclature" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Состав">
+	<Заказ>
+		<ID>ОУУК-023224</ID>
+		<State>В работе</State>
+		<Товары>
+			<Product>
+				<NameProduct>Atlant 12-28 Ah </NameProduct>
+			</Product>
+		</Товары>
+	</Заказ>
+	<Заказ>
+		<ID>ОУУК-023225</ID>
+		<State>В работе</State>
+		<Товары>
+			<Product>
+				<NameProduct>Thomas GB 12-20 Ah 12V20Ah</NameProduct>
+			</Product>
+			<Product>
+				<NameProduct>Thomas GB 12-20 Ah 12V20Ah</NameProduct>
+			</Product>
+		</Товары>
+	</Заказ>
+</Состав>
