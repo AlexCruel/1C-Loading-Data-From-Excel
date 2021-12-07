@@ -1,0 +1,27 @@
+﻿<xs:schema xmlns:tns="http://1ak.by/1C/Orders" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://1ak.by/1C/Orders" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:complexType name="ЗаказПокупателя">
+		<xs:sequence>
+			<xs:element name="НомерЗаказаСайт" type="xs:string" nillable="true"/>
+			<xs:element name="НомерЗаказа" type="xs:string"/>
+			<xs:element name="Статус" type="xs:string"/>
+			<xs:element name="Товары" type="tns:СущностьТовар" minOccurs="2000" maxOccurs="2000"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="СвойстваТовара">
+		<xs:sequence>
+			<xs:element name="НаименованиеТовара" type="xs:string"/>
+			<xs:element name="Количество" type="xs:string"/>
+			<xs:element name="Стоимость" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Состав">
+		<xs:sequence>
+			<xs:element name="ЗаказПокупателя" type="tns:ЗаказПокупателя" minOccurs="2000" maxOccurs="2000"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="СущностьТовар">
+		<xs:sequence>
+			<xs:element name="Товар" type="tns:СвойстваТовара" minOccurs="2000" maxOccurs="2000"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
